@@ -1,4 +1,3 @@
-
 def get_cookies():
     return {
         '_pv': 'default',

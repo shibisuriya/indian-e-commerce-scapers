@@ -1,11 +1,12 @@
 # Add key and params here.
 
-def get_key(): 
+
+def get_key():
     return 'comforter'
 
 
 def get_default_params():
-    return  {
+    return {
         'f': 'Gender:men,men women',
         'plaEnabled': 'false',
         'xdEnabled': 'false',

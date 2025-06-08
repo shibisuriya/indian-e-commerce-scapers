@@ -53,4 +53,9 @@ json_data = {
     },
 }
 
-response = requests.post('https://2.rome.api.flipkart.com/api/4/page/fetch', cookies=cookies, headers=headers, json=json_data)
+response = requests.post(
+    'https://2.rome.api.flipkart.com/api/4/page/fetch',
+    cookies=cookies,
+    headers=headers,
+    json=json_data,
+)
