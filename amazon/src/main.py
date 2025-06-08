@@ -46,9 +46,12 @@ with open(file_name, 'a') as file:
             if image:
                 image = image['src']
 
-            title = item.find('span', class_='a-size-base-plus a-color-base a-text-normal')
+            title = item.find(
+                'h2', attrs={'class': ['a-spacing-none', 'a-color-base', 'a-text-normal']}
+            )
+
             if title:
-                title = title.text
+                title = title['aria-label']
             else:
                 title = item.find('span', class_='a-size-medium a-color-base a-text-normal')
                 title = title.text
